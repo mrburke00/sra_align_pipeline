@@ -5,9 +5,9 @@ Need to create `bwa_errors`, `log_align`, and `log_build_reference` directories 
 
 `align.sh`
 
-  - Input SRA numbers here.  Input is SRA numbers assigned to fastq files
+  - Input is S3 bucket containing folders named by accession number with the fastq files in each folder. 
   - Ouput are sorted BAM files and their indexes
-  - Have to change the reference and cpu count 
+  - Have to change the reference file name, cpu count, and SRA bucket name
   - Have to change SRA numbers and how you will be downloading the files
   
 `align.sbatch`
